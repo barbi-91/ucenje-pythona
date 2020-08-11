@@ -7,4 +7,4 @@ with open ("datoteka.txt", "r") as f:
     for i in f.readlines():
         suma+=int(i)
 
-print (suam)
+print (suma)
