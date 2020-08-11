@@ -8,7 +8,7 @@ print(osoba)
 
 
 
-for v in osoba.values():
+for v in osoba.keys():
     print(v)
 
 #brisanje vrijednosti iz rijecnika pomocu DEL ž
