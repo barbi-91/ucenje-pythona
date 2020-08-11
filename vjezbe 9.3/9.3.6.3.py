@@ -1,3 +1,4 @@
+
 osoba={"ime":"Barbara", "prezime":"Erdec", "godine":29}
 osoba.update({"adresa":"Ivana Berute"})
 print(osoba)
