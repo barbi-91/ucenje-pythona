@@ -8,8 +8,8 @@ print(osoba)
 
 
 
-for vrijednost in osoba.values():
-    print(vrijednost)
+for v in osoba.values():
+    print(v)
 
 #brisanje vrijednosti iz rijecnika pomocu DEL ž
 #takoder pomocu for petlje ispisavanje samo vrijednosti a ne i kljuceva iz rijecnika
