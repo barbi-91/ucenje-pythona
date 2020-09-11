@@ -1,5 +1,5 @@
 lista=[]
-i=0
+i=0 #i je brojac
 
 while True:
     a=int(input("unesi broj:"))
@@ -11,7 +11,7 @@ while True:
     else:
         break
 
-while i<6:
+while i<6: #sve dok je brojac manji od 6
     lista.append(0)
     i+=1
 print(lista)
