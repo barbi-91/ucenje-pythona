@@ -1,3 +1,4 @@
+#rijesen
 lista=[]
 while True:
     x= input("unesi neki broj")

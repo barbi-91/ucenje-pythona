@@ -39,13 +39,13 @@
 # print("suma svih vrijednosti je:",suma, 
 #  "uneseni broj se ne racuna jel je ponovljen i program je stao s radom")
 #**************************************************
-
+#odlican
 lista=[]
 trenutni=0
 suma=0
 while True:
         n=int(input("unesi broj"))
-        if n==5 and trenutni>n:
+        if n==5 or trenutni>n: #ili jedna ili drugi uvijet moraju biti zadovoljeni, ako se stavi and onda oba moraju biti zadovoljenja podjednako ako to nisu onda je false i program ide dalje...bolja opcija je tu or...
                 print("upisani broj je prekidni ili je manji od prethodnog i program se prekida")
                 break
         
