@@ -39,3 +39,6 @@ i = 0
 unos = int(input("upisi cijeli broj"))
 izracun()
 print(izracun(), "je rezutlat")
+
+#glloblnu varijablu predajemo lokalnoj global n ako je nazovemo opet n
+#ili nvi naziv varijable u samoj metodi...n=unos
