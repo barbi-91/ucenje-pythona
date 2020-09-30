@@ -16,11 +16,14 @@ print("unesite zeljenu vrijednsoti: 1 za zbrajanje, 2 za oduzimanje, 3 za mnozen
 while True:
     n=int(input("unesite broj zeljenje operacije:"))
 
-    if n <=-1 or n=> 6: 
+    if n<=-1 or n>=5: 
         print("unijeli ste pogresan broj, pokusajte ponovno")
-        break
+        continue
+    if n==0:
+            print("izlazak iz programa")
+            break
     rezultat=0
-    if n >= 0 or n <= 5:
+    if n >= 0 or n <=4:
         b=int(input("unesi neki broj"))
         c=int(input("unesi neki broj"))
         if n==1:
@@ -31,9 +34,7 @@ while True:
             rezultat=mnozenje(b,c)
         elif n==4:
             rezultat=djeljenje(b,c)
-        elif n==0:
-            print("izlazak iz programa")
-            break
+        
         print(rezultat)
         
     
