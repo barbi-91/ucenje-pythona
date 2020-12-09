@@ -1,0 +1,5 @@
+print("lik me uci python!")
+print("zeli da izracunam nesto po svom izboru, pa da vidimo")
+print(1991.0>1983.0)
+print("navedeni podatak bi trebao biti tocan, kao sto i pise true :)")
+print(3.0 + 2.0 + 3.0 + 4.0 + 2.0 + 5.0, "izracunava")
