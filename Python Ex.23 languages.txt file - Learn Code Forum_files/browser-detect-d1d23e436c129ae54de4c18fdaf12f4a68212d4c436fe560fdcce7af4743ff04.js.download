@@ -1,0 +1,2 @@
+window.WeakMap&&window.WeakSet&&window.Promise||(window.unsupportedBrowser=!0);
+//# sourceMappingURL=/assets/browser-detect-d1d23e436c129ae54de4c18fdaf12f4a68212d4c436fe560fdcce7af4743ff04.js.map
