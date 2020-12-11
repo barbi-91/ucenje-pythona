@@ -1,4 +1,4 @@
-from test43.15Zivotinje import Zivotinje
+from test4315Zivotinje import Zivotinje
 
 class ZecjaRupa(Scene):
     def enter(self):
@@ -14,7 +14,8 @@ class ZecjaRupa(Scene):
 
         vrata = 2003
         print("""Broj koji otvara vrata je cetveroznamen broj i predstavlja
-        datum dolaska proljeca(dan i mjesec)""")
+                            datum dolaska proljeca(dan i mjesec)
+            """)
 
         pogodak = input ("pogodi sifru >>> ")
 
@@ -25,7 +26,7 @@ class ZecjaRupa(Scene):
             pogodak = input("pogodi: >>> ")
 
         if pogodak == vrata:
-            print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao deblji kraj 
+            print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao deblji kraj
             te ga je pojeo ljuti:""")
             ljuti= Zivotinje()
             ljuti.enter()
