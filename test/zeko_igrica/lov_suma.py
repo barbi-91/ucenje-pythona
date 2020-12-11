@@ -1,3 +1,5 @@
+from Zagonetke import *
+
 class LovSuma(Scene):
     def enter(self):
         print(dedent("""

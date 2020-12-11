@@ -1,12 +1,16 @@
 from sys import exit
 from random import randint
 from textwrap import dedent
-from test43 import class Smrt()
 
-class Scene(object):
-    def enter(self):
-        print("Slika scene")
-        exit(0)
+from kraj import *
+from lov_suma import *
+from potok import *
+from smrt import *
+from vrt import *
+from zecja_rupa import *
+from scene import *
+
+
 ##########################################
 class Organizacija(object):
 

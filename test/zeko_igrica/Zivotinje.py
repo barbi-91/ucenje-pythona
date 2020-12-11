@@ -8,4 +8,3 @@ class Zivotinja(Scene):
         ]
     def enter(self):
         print(Zivotinja.bice[randint(0,len(self.bice)-1)])
-y
