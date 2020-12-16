@@ -44,33 +44,6 @@ if len(A) % 2 == 0: #dobijemo neparan broj liste
         
             
 
-        # for element in range (1, len(A), 2):
-        #     B = A.pop(element)
-        #     print(A)
-        #     print(B)
-            
-
-        # for index in range(0, len(A), 2):
-
-        #     if index + 1 > len(A): 
-        #         print(A[index])
-
-        #     if A[index] != A[index+2]:
-        #         print(A[index])
-
-        
-
-
-# for element in A:
-#     c = A.index(element)
-#    # print (A.index(element), end="")
-#    # print (element, end="")
-#    a=0
-#    b=1
-#     if A.index(element) != a and A.index(element) != b:
-#         print(element)
-
-
 
 #njegovo rijesenje sa interneta
 #A = [9,3,9,3,9,7,9]
