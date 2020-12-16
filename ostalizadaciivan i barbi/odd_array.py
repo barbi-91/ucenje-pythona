@@ -1,15 +1,9 @@
 #A = [9,3,9,3,9,7,9]
-#A = [3,2,3,2,3,1,3]
+#A = [3,2,3,2,2,3,1,3]
 #A = [3,2,3,2,3,2,3,4,3,2,3,2,3,2,3,2,3,5]
 #A = [3,5,3,5,1,2,1,2,3]
-#A = [3,5,3,6,1,2,1,2,4,2,4]
-# B = []
-# duljina = len(A) - 1
-# for broj in A:
-#     B.append(duljina)
-#     duljina-=1
-# print(sorted(B))
-# print(A)
+A = [3,5,3,6,1,2,1,2,4,2,4]
+
 
 
 
@@ -28,7 +22,7 @@ if len(A) % 2 != 0: #dobijemo paran broj liste
 if len(A) % 2 == 0: #dobijemo neparan broj liste
     if len(A) != 2:
         if len(A) % 4 != 0:
-            print(A[-1],",",A[-2], "ispisujemo clanove parne, ali bez njihovog para")
+            print(A[-2],",",A[-1], "ispisujemo clanove parne, ali bez njihovog para")
             A.pop(-1)
             A.pop(-1)
             
