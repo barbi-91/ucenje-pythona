@@ -19,4 +19,9 @@ def caesar_enkripcija(kod,korak):
       output.append(slovo1)
   return output
 
-print(caesar_enkripcija("„Na svijetu uvijek postoji jedna osoba koja čeka onu drugu, bilo da je nasred pustinje ili usred velikog grada. A kad se te osobe sretnu i njihovi se pogledi ukrste, prošlost i budućnost gube svako značenje. Postoji taj trenutak i nevjerojatna sigurnost da je sve stvari pod suncem ispisala jedna ista ruka, ruka koja je stvorila po jednu dušu, blizanku za svaku osobu.-P.C.", 28))
+print(caesar_enkripcija("""„Na svijetu uvijek postoji jedna osoba koja
+čeka onu drugu, bilo da je nasred pustinje ili usred velikog grada.
+A kad se te osobe sretnu i njihovi se pogledi ukrste, prošlost i budućnost
+gube svako značenje. Postoji taj trenutak i nevjerojatna sigurnost da je
+sve stvari pod suncem ispisala jedna ista ruka, ruka koja je stvorila po
+jednu dušu, blizanku za svaku osobu.-P.C.""", 28))

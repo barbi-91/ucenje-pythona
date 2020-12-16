@@ -1,3 +1,3 @@
 # ucenje-pythona
-hvala Ivan 
+hvala Ivan
 hvala Ivan 
