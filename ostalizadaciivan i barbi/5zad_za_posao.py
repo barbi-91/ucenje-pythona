@@ -15,34 +15,34 @@ N = int(input("unesi broj duljine stringa:"))
 def ispis_koda(N):
     lista = []
     
-    for element in range(1, N+1):
-        x = random.randrange(1,5)
+for element in range(1, N+1):
+    x = random.randrange(1,5)
 
-        if x == 1:
-            x = a
-        if x == 2:
-            x = b
-        if x == 3:
-            x = c
-        if x == 4:
-            x = d
-        lista.append(x)
+    if x == 1:
+        x = a
+    if x == 2:
+        x = b
+    if x == 3:
+        x = c
+    if x == 4:
+        x = d
+    lista.append(x)
 
-        for slovo in lista:
-            if slovo == a:
-                tmp = a
-                a = tmp + 1
-            if slovo == b:
-                tmp = b
-                b = tmp + 1
-            if slovo == c:
-                tmp = c
-                c = tmp + 1
-            if slovo == d:
-                tmp = d
-                d = tmp + 1
-        while a % 2 == 0 and b % 2 == 0 and c % 2 == 0 and d % 2 == 0:
-            ispis_koda(N)
+    for slovo in lista:
+        if slovo == a:
+            tmp = a
+            a = tmp + 1
+        if slovo == b:
+            tmp = b
+            b = tmp + 1
+        if slovo == c:
+            tmp = c
+            c = tmp + 1
+        if slovo == d:
+            tmp = d
+            d = tmp + 1
+    while a % 2 == 0 and b % 2 == 0 and c % 2 == 0 and d % 2 == 0:
+        ispis_koda(N)
 ispis_koda(N) 
 
 
