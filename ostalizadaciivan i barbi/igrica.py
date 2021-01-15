@@ -44,14 +44,15 @@ class Vrt(Scene):
             zadnje noge, te brzim pokretima lupkao nogom u pod, kao zurni znak
             za uzbunu!
                                 *  *  *
-            Svi se zecevi na to poplase se i odmah zakljucaju u svoje zecje kucice
-            (jazbine). Zeko vodi dosta brige o sigurnosti svojih rođaka. Iako je na
-            Zečevu tijekom godine bilo dovoljno hrane za sve zečeve, dolaskom zime
-            bilo je sve manje i manje. Zečevi tada žive veoma skromno, kopaju snijeg,
-            tražeći suhu travu, glodaju koru drveća te grmlje u šumi. Tada zečevi
-            pretežno žive u svojim toplim kućicama, pogotovo kada padne snijeg.
-            Stoga Zeko mora u Opskrbu po zelje i mrkvu do vrta u selu i to
-            oprezno kako ga ne bi uhvatila lisica, lovac ili ljuti seljanin.
+            Svi se zecevi na to poplase se i odmah zakljucaju u svoje zecje
+            kucice (jazbine). Zeko vodi dosta brige o sigurnosti svojih rođaka.
+            Iako je na Zecevu tijekom godine bilo dovoljno hrane za sve zečeve,
+            dolaskom zime bilo je sve manje i manje. Zečevi tada žive veoma
+            skromno, kopaju snijeg, tražeći suhu travu, glodaju koru drveća te
+            grmlje u šumi. Tada zečevi pretežno žive u svojim toplim kućicama,
+            pogotovo kada padne snijeg. Stoga Zeko mora u Opskrbu po zelje i
+            mrkvu do vrta u selu i to oprezno kako ga ne bi uhvatila lisica,
+            lovac ili ljuti seljanin.
                                 *  *  *
             Zeko je Krenuo hrabro po mrkvu, medutim naisao je na gladnu lisicu
             putem koja ga je uocila! Pomozi Zeki odluciti, hoce li se nas Zeko:
@@ -94,7 +95,7 @@ class Vrt(Scene):
 
         elif radnja == "pobjeci":
             print(dedent("""
-             *********************************POCETAK IGRE*********************************
+             ************************************Zeko odluci pobjeci***********************
              ******************************************************************************
 
                                                 *  *  *
@@ -217,8 +218,8 @@ class Potok(Scene):
         print(dedent("""
             ********************smrznuo se potocic******************************
             A onda su dosli jos hladniji dani, zekina braca i sestre su sve cesce
-            ostajali kod tople kuce umjesto igre u potocicu… Ali mali Zeko svaki bi
-            dan dosao, skakao i sljapkao po svom potocicu.
+            ostajali kod tople kuce umjesto igre u potocicu… Ali mali Zeko svaki
+            bi dan dosao, skakao i sljapkao po svom potocicu.
             No, jedne zimske noci, u Zecevu smrznuo se potocic i pokrio ga snijeg.
             I tuzan mislio je Zeko ta gdje je potok taj, uskoro ce i prvi maj.
                                 *  *  *
@@ -228,9 +229,11 @@ class Potok(Scene):
             snijeg malo okopni, on ce poceti veselo zuboriti.
                                 *  *  *
             No Zeko nije zelio cekati... i nisu mu se svidali odgovori...
-            Razmisljao je kako si moze pomoci i dosao na ideju. Moze odmrznuti potok
-            vatrom tako da sakupi puno granja i paziti da vatra ne ugansne, sto je
-            naporno za malog zeca ili usnuti te docekati proljece u svom toplom kreveticu.
+            Razmisljao je kako si moze pomoci i dosao na ideju. Moze odmrznuti
+            potok ako nalozi vatru, tako da sakupi puno granja te paziti da
+            vatra ne ugansne dok se ne otopi sav led, a sto je opasno za malog
+            zeca ili odluciti te usnuti i tako docekati proljece u svom toplom
+            kreveticu.
 
             Hmmmm, sto je pametnije:
             a) odmrznuti ?
@@ -250,13 +253,14 @@ class Potok(Scene):
             print(dedent("""
                 *******************************SAN******************************
                 Ispravna odluka!
-                Zeko je radosno pomislio kako ce spavati da bi proljece sto prije
-                doslo i kako bi mogao uzivati sa svojim prijateljima pored potocica koji
-                ih je tako smijelo mamio svojim plavim ljeskanjem i suncem te cvijecm koje
-                se savrseno uklapalo u idilu te male razigrane doline.
+                Zeko je radosno pomislio na san te da je to najblja odluka kako
+                bi docekao proljece sto prije i kako bi mogao uzivati sa svojim
+                prijateljima pored potocica koji ih je tako smijelo mamio svojim
+                plavim ljeskanjem i suncem te cvijecm savrseno uklapljenim u idilu
+                male, razigrane doline.
 
                 Tako je Zeko utonuo u misli i radosno odskakuto u svoj krevetic.
-                ***************************************************************
+                ********************************************************************
                 """))
             return 'zecja_rupa'
 
@@ -268,9 +272,8 @@ class Zivotinja(Scene):
     bice = [
             "MEDVJED",
             "VUK",
-            "LISICA",
+            "LISAC",
             "CAGALJ",
-            "KUNA",
         ]
     def enter(self):
         print(Zivotinja.bice[randint(0,len(self.bice)-1)])
@@ -279,9 +282,11 @@ class Zivotinja(Scene):
 class ZecjaRupa(Scene):
     def enter(self):
         print(dedent("""
+            ******************************* DOSLO JE PROLJECE **************************
             Kako bi se maleni zeko probudio iz najljepseg ziskog sna i shvatio da je
             doslo proljece potrebno je pogoditi pravilnu sifru za otvaranje vrata.
-            Zeko je znao da ce usnuti te je zatvorio vrata kako mu ne bi dosla 
+                                                *  *  *
+            Zeko je znao da ce usnuti te je zatvorio vrata kako mu ne bi dosla
             kakva gladna zivotinja dok je on u bezbriznom snu! No, Zeko nije razmisljao
             da je vec prije njega netko drugi odlucio poci u san te je sada on u opasnosti!
             Potrebno ga je probuditi prije no sto se probudi gladna zvijer koja ce
@@ -289,42 +294,45 @@ class ZecjaRupa(Scene):
             """))
 
         vrata = 2003
-        print("""Broj koji otvara vrata je cetveroznamen broj i predstavlja
-                            datum dolaska proljeca! (dan i mjesec)
+        print("""
+        Broj koji otvara vrata je cetveroznamen broj i predstavlja
+                datum dolaska proljeca! (dan i mjesec)
             """)
 
-        pogodak = input ("pogodi sifru >>> ")
-         
-        if len(pogodak) > 4:
-            print("sifra je prekratka")
-        elif len(pogodak) < 4:
-            print("sifra je preduga")
-            return zecja_rupa
+        pogodak = int(input ("pogodi sifru >>> "))
 
-        else:
+        if pogodak != vrata:
 
-            brojac = 0
-            print(dedent("""
-            * * * * * * * * * * * *
-            imate jos tri pokusaja!
-            * * * * * * * * * * * *
-            """))
-            while int(pogodak) != vrata and brojac < 3:
-                brojac += 1
-                print("pokusaj ponovno")
-                pogodak = input("pogodi: >>> ")
-
-            if pogodak != vrata:
-                print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao deblji kraj
-                te ga je pojeo ljuti:""")
-                ljuti = Zivotinja()
-                ljuti.enter()
-                return 'smrt'
+            if len(str(pogodak)) < 4 or len(str(pogodak)) > 4:
+                print("sifra mora sadrzavati 4 znamenke!")
+                return zecja_rupa
 
             else:
-                print("""Zeko je zato postao najpoznatiji i najslavniji zec
-                                u cijeloj šumi na Zečevu.""")
-                return 'kraj'
+                brojac = 0
+                print(dedent("""
+                * * * * * * * * * * * *
+                imate jos tri pokusaja!
+                * * * * * * * * * * * *
+                """))
+                while int(pogodak) != vrata  and brojac < 3:
+                    brojac += 1
+                    print("pokusaj ponovno")
+                    pogodak = int(input("pogodi: >>> "))
+
+                if pogodak != vrata:
+
+                    print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao gorak
+                    kraj te ga je pojeo ljuti:""")
+                    ljuti = Zivotinja()
+                    ljuti.enter()
+                    return 'smrt'
+                else:
+                    return 'kraj'
+
+        else:
+            print("""Zeko je zato postao najpoznatiji i najslavniji zec
+                            u cijeloj šumi na Zečevu.""")
+            return 'kraj'
 
 
 class Kraj(Scene):

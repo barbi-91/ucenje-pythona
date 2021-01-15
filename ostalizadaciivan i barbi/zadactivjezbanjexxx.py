@@ -109,9 +109,9 @@
 #     print("rijec je kratka")
 
 # lista = [2,27,35,17]
-# a = int(input("Unesi jedan broj")) 
+# a = int(input("Unesi jedan broj"))
 # if a in lista:
-#     print("Uneseni broj se nalazi u listi") 
+#     print("Uneseni broj se nalazi u listi")
 # else:
 #     print("Uneseni broj se ne nalazi u listi")
 
@@ -131,9 +131,9 @@
 
 # ista = [22, 20, 21, 24, 15, 19]
 # s = 0
-# for x in lista: 
-#     if x % 2 == 0: 
-#         s = s + x 
+# for x in lista:
+#     if x % 2 == 0:
+#         s = s + x
 #         print(s)
 
 
@@ -170,12 +170,12 @@
 # print (lista.index("Ivan Tot"))
 
 # l= ['Marko Marković', 'Ivan Ivić', 'Petar Petić', 'Ivan Tot', 'Mario Car', 'Ivan Nađ']
-# k = l.index( "Mario Car" ) 
+# k = l.index( "Mario Car" )
 # print( l[ k-1 ] )
 
 # l = [13, 11, 18]
 # k = [13, 16, 15]
-# n = l + k 
+# n = l + k
 # print( n )
 
 # def unos():
@@ -194,10 +194,15 @@
 # for i in range(1,4):
 #     zbroj()
 
+
+
+
+
+
 # def paran(a):
 #     if a % 2 == 0:
 #         print("paran broj")
-#     else: 
+#     else:
 #         print("broj je neparan")
 
 # def negativan(a):
@@ -265,13 +270,13 @@
 # m = int(input("unesi cijeli broj"))
 # print(f(m))
 
-# def vrijeme(a): 
-#     s = a // 60 
+# def vrijeme(a):
+#     s = a // 60
 #     m = a % 60
 #     return s,m
 
 
-# x = int(input("Unesi koliko minuta je Edita čitala knjigu")) 
+# x = int(input("Unesi koliko minuta je Edita čitala knjigu"))
 # vrijeme(x)
 # # m = int(input("unesi cijeli broj"))
 # print(vrijeme(x))
@@ -279,7 +284,7 @@
 # def f(l,n):
 #     return l + n
 
-# print(f(11,22)," ",f("11","22")) 
+# print(f(11,22)," ",f("11","22"))
 
 # def f(l,n):
 #     return l * n
@@ -293,7 +298,7 @@
 
 # def dvocifren(a):
 #     d = a // 10
-#     j = a % 10	
+#     j = a % 10
 #     return j + d
 
 # c=34
@@ -349,21 +354,21 @@
 # strijelci = {"Mesi", "Ronaldo", "Mesi", "Ibrahimović", "Ibrahimović", "Nejmar", "Nejmar"}
 # print(strijelci)
 # golovi = ["Mesi", "Ronaldo", "Mesi", "Ibrahimović", "Ibrahimović", "Nejmar", "Nejmar"]
-# strijelci = set(golovi) 
+# strijelci = set(golovi)
 # print(strijelci)
 
 # ritmicka = {"Ana", "Marica", "Ivana", "Gordana"}
-# odbojka = {"Tara", "Nada", "Marica", "Ivana", "Aleksandra"} 
+# odbojka = {"Tara", "Nada", "Marica", "Ivana", "Aleksandra"}
 # dva_sporta = ritmicka & odbojka
-# bar_jedan_sport = ritmicka | odbojka 
-# samo_odbojka = odbojka - ritmicka 
+# bar_jedan_sport = ritmicka | odbojka
+# samo_odbojka = odbojka - ritmicka
 
-# print(dva_sporta) 
-# print(bar_jedan_sport) 
+# print(dva_sporta)
+# print(bar_jedan_sport)
 # print(samo_odbojka)
 
 # vocarna={1001:"Jabuka",1002:"Kruška",1003:"jagoda",1004:"Banana",1005:"kivi"}
-# for kljuc,vrijednost in vocarna.items(): 
+# for kljuc,vrijednost in vocarna.items():
 #     print(kljuc," - ",vrijednost)
 
 
@@ -376,7 +381,7 @@
 # gradovi= {"Zagreb":(44,20),
 #     "Budimpesta":(47, 19),
 #     "Beč": (48.2082, 16.3738),
-#    
+#
 #  "Bratislava": (48.1486, 17.1077)}
 
 # grad= input("unesi ime grada:")
@@ -384,7 +389,7 @@
 # print(gradovi[grad])
 
 # gradovi= {"hrv": "zagreb, split, osijek",
-# "njem":"berlin, munchen,karlsluhe", 
+# "njem":"berlin, munchen,karlsluhe",
 # "slo":"maribor, ljubljana, ptuj" }
 
 # zemlja = input("unesi ime zemlje")
@@ -402,7 +407,7 @@
 
 # a= {32, 1, 41, 12, 46, 19, 27, 30}
 # b = {33, 1, 41, 43, 48, 22, 28, 29}
-# c = a & b 
+# c = a & b
 # d = c - {1}
 # print( len(d) )
 
@@ -410,24 +415,24 @@
 # print(p[1])
 
 # s = {'a8': 12.0}
-# lista = [] 
+# lista = []
 # for x in s:
-#     lista.append(s[x]) 
+#     lista.append(s[x])
 #     print(lista)
 
 
 # for red in range(0,4):
 #     for stupac in range(0,5):
 #         print(end="*")
-#     # print("\n") 
-        
+#     # print("\n")
+
 #     print("")
 
 # for red in range(0,4):
 #     for stupac in range(red):
 #         print(end="?")
-#     # print("\n") 
-        
+#     # print("\n")
+
 #     print("")
 
 # for red in range(1,11):                       :=)
@@ -452,9 +457,9 @@
 #         print (niz[elementNiza])
 #         print(niz[sljedeciElement])
 #         if (niz[elementNiza]>niz[sljedeciElement]):
-            
-            
-            
+
+
+
 #             b=niz[elementNiza]
 #             print(b ,"je b")
 #             niz[elementNiza]=niz[sljedeciElement]
@@ -484,16 +489,16 @@
 # print(lista,"nova lista")
 
 #************************************************
-
-def bubleSort(lista):
-    for i in range(len(lista)-1,0,-1):
-        for j in range(i):
-            if lista[j]>lista[j+1]:
-                b=lista[j]
-                lista[j]=lista[j+1]
-                lista[j+1]=b
-
-
-lista=[6,2,3,7,0,1]
-bubleSort(lista)
-print(lista)
+#
+# def bubleSort(lista):
+#     for i in range(len(lista)-1,0,-1):
+#         for j in range(i):
+#             if lista[j]>lista[j+1]:
+#                 b=lista[j]
+#                 lista[j]=lista[j+1]
+#                 lista[j+1]=b
+#
+#
+# lista=[6,2,3,7,0,1]
+# bubleSort(lista)
+# print(lista)

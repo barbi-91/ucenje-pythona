@@ -2,15 +2,11 @@ from sys import exit
 from random import randint
 from textwrap import dedent
 
-from kraj import *
-from lov_suma import *
-from potok import *
-from smrt import *
-from vrt import *
-from zecja_rupa import *
-from scene import *
 
-
+class Scene(object):
+    def enter(self):
+        print("Slika scene")
+        exit(0)
 ##########################################
 class Organizacija(object):
 
@@ -27,7 +23,16 @@ class Organizacija(object):
         trenutna_scena.enter()
 #########################################
 
+
 class Mapa(object):
+    from smrt import Smrt
+    from vrt import Vrt
+    from zagonetke import Zagonetke
+    from lov_suma import Lov_Suma
+    from potok import Potok
+    from zivotinje import Zivotinja
+    from zecja_rupa import Zecja_Rupa
+    from kraj import Kraj
 
     scene = {
         'vrt': Vrt(),
@@ -38,6 +43,7 @@ class Mapa(object):
         'kraj': Kraj()
         }
 
+
     def __init__(self, startna_scena):
         self.startna_scena = startna_scena
 
@@ -47,8 +53,12 @@ class Mapa(object):
 
     def scena_otvaranja(self):
         return self.sljedeca_scena(self.startna_scena)
-
+ 
 
 zeko_mapa = Mapa('vrt')
 zeko_igra = Organizacija(zeko_mapa)
 zeko_igra.igra()
+
+
+
+

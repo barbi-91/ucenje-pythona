@@ -1,46 +1,51 @@
-# Napisi metodu string solution(int N) koja vraća string
-# duljine N takav da je u njemu uvijek neparni broj znakova,
-# string smije sadržavati samo znakove [a, b, c, d], npr.:
-#da se neparni broj puta ponavllja isto slovo uu jednoj rijeci!
+# # Napisi metodu string solution(int N) koja vraća string
+# # duljine N takav da je u njemu uvijek neparni broj znakova,
+# # string smije sadržavati samo znakove [a, b, c, d], npr.:
+# #da se neparni broj puta ponavllja isto slovo uu jednoj rijeci!
 
-# 		N = 1, string je "a" ili "b" ili "c"...
-# 		N = 2, string je "ab" ili "bc"...
-# 		N = 3, string je "abc" ili "bcd"...
-# 		N = 4, string je "abcd"
-# 		N = 5, string je "abccc" ili "aaabc" ili "abbbc" ili "bcddd"...
-# 		N = 6, string je "aaabbb" ili "aaaaab"...
+# # 		N = 1, string je "a" ili "b" ili "c"...
+# # 		N = 2, string je "ab" ili "bc"...
+# # 		N = 3, string je "abc" ili "bcd" ili "aaa"...
+# # 		N = 4, string je "abcd" ili "ss
+# # 		N = 5, string je "abccc" ili "aaabc" ili "abbbc" ili "bcddd"...
+# # 		N = 6, string je "aaabbb" ili "aaaaab"...
 
-import random
-N = int(input("unesi broj duljine stringa:"))
-def ispis_koda():
-    lista = []
 
-for element in range(1, N+1):
-    x = random.randrange(1,5)
+#kod s rekurzijom
+# import random
+# N = int(input("unesi broj duljine stringa:"))
+# def ispis_koda(N):
+#     lista = []
+#     brojac1 = 0
+#     brojac2 = 0
+#     brojac3 = 0 
+#     brojac4 = 0
 
-    if x == 1:
-        x = "a"
-    if x == 2:
-        x = "b"
-    if x == 3:
-        x = "c"
-    if x == 4:
-        x = "d"
-    lista.append(x)
+#     for element in range(0,N,1):
+#         x = random.randrange(1,5)
+#         if x == 1:
+#             x = "a"
+#             brojac1 += 1
+#         if x == 2:
+#             x = "b"
+#             brojac2 += 1
+#         if x == 3:
+#             x = "c"
+#             brojac3 += 1
+#         if x == 4:
+#             x = "d"
+#             brojac4 += 1
+#         lista.append(x)
+#     if brojac1 % 2 == 0 or brojac2 % 2 == 0 or brojac3 % 2 == 0 or brojac4 % 2 == 0:
+#         ispis_koda(N)
+#     else:
+#         print(lista)
+# ispis_koda(N) 
 
-    for slovo in lista:
-        if slovo == "a":
-            tmp = "a"
-            "a" = tmp + 1
-        if slovo == "b":
-            tmp = "b"
-            "b" = tmp + 1
-        if slovo == "c":
-            tmp = "c"
-            "c" = tmp + 1
-        if slovo == "d":
-            tmp = "d"
-            "d" = tmp + 1
-    while "a" % 2 == 0 and "b" % 2 == 0 and "c" % 2 == 0 and "d" % 2 == 0:
-        ispis_koda(N)
-ispis_koda(N)
+N = int(input("unesi broj duljine stringa"))
+lista = ["a","b","c","d"]
+
+if N % 2 == 0:
+    print((N-1)*lista[0]+lista[1])
+else:
+    print(N*lista[0])
