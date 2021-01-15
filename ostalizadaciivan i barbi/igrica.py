@@ -342,10 +342,10 @@ class Kraj(Scene):
         ************************************************************************
         ****************************** * *  <3 * <3 * <3  * * ******************
         ************************************************************************
-        Pobjedili ste zimu, Bravo!
+                                Pobjedili ste zimu, Bravo!
         * * *  <3 * <3 * <3  * * *
         Ako podijelimo barem malu iskricu topline s onima koje sretnemo na putu,
-        zima će postati mnogo toplija, za sve!
+                        zima će postati mnogo toplija, za sve!
         ************************************************************************
         ******************************* * *  <3 * <3 * <3  * * *****************
 
