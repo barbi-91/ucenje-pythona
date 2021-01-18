@@ -1,4 +1,6 @@
-class Zagonetke(Scene):
+from random import randint
+
+class Zagonetke():
     odgonetke = [
         """
         Kraj potoka ili rijeke

@@ -1,4 +1,6 @@
-class Smrt(Scene):
+from textwrap import dedent
+
+class Smrt():
 
     citati = [
         " Ljudi vam nikada neće oprostiti uspjeh, čvrst hod nakon pada i širok osmijeh preko cijelog lica.\n",

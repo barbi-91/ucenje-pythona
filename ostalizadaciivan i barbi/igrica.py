@@ -321,8 +321,8 @@ class ZecjaRupa(Scene):
 
                 if pogodak != vrata:
 
-                    print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao gorak
-                    kraj te ga je pojeo ljuti:""")
+                    print("""Bili ste tik do pobjede. Na zalost Zeko je izvukao
+                    gorak kraj te ga je pojeo ljuti:""")
                     ljuti = Zivotinja()
                     ljuti.enter()
                     return 'smrt'

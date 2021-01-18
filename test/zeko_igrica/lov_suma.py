@@ -1,6 +1,7 @@
-from Zagonetke import *
+from zagonetke import *
+from textwrap import dedent
 
-class LovSuma(Scene):
+class LovSuma():
     def enter(self):
         print(dedent("""
             **************************ZEKO SRECE LOVACA*************************

@@ -1,4 +1,6 @@
-class Kraj(Scene):
+from textwrap import dedent
+
+class Kraj():
 
     def enter(self):
         print(dedent("""

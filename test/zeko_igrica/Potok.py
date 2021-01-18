@@ -1,5 +1,5 @@
-
-class Potok(Scene):
+from textwrap import dedent
+class Potok():
 
     def enter(self):
         print(dedent("""

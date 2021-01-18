@@ -1,12 +1,19 @@
 from sys import exit
-from random import randint
-from textwrap import dedent
 
+from smrt import Smrt
+from vrt import Vrt
+from zagonetke import Zagonetke
+from lov_suma import LovSuma
+from potok import Potok
+from zivotinje import Zivotinja
+from zecja_rupa import ZecjaRupa
+from kraj import Kraj
 
 class Scene(object):
     def enter(self):
         print("Slika scene")
         exit(0)
+
 ##########################################
 class Organizacija(object):
 
@@ -21,19 +28,11 @@ class Organizacija(object):
             sljedeca_scena_ime = trenutna_scena.enter()
             trenutna_scena = self.plan.sljedeca_scena(sljedeca_scena_ime)
         trenutna_scena.enter()
+
 #########################################
 
 
 class Mapa(object):
-    from smrt import Smrt
-    from vrt import Vrt
-    from zagonetke import Zagonetke
-    from lov_suma import Lov_Suma
-    from potok import Potok
-    from zivotinje import Zivotinja
-    from zecja_rupa import Zecja_Rupa
-    from kraj import Kraj
-
     scene = {
         'vrt': Vrt(),
         'lovac': LovSuma(),

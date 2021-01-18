@@ -1,4 +1,6 @@
-class ZecjaRupa(Scene):
+from textwrap import dedent
+
+class ZecjaRupa():
     def enter(self):
         print(dedent("""
             ******************************* DOSLO JE PROLJECE **************************

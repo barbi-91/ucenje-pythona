@@ -1,4 +1,4 @@
-class Zivotinja(Scene):
+class Zivotinja():
     bice = [
             "MEDVJED",
             "VUK",

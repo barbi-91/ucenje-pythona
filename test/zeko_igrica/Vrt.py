@@ -1,5 +1,6 @@
+from textwrap import dedent
 
-class Vrt(Scene):
+class Vrt():
     def enter(self):
         print(dedent("""
             ***************************************************************
