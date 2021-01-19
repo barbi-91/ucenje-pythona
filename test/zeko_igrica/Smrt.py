@@ -1,4 +1,5 @@
 from textwrap import dedent
+from random import randint
 
 class Smrt():
 

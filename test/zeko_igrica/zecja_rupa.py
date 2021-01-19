@@ -1,4 +1,5 @@
 from textwrap import dedent
+from zivotinje import *
 
 class ZecjaRupa():
     def enter(self):
@@ -26,7 +27,7 @@ class ZecjaRupa():
 
             if len(str(pogodak)) < 4 or len(str(pogodak)) > 4:
                 print("sifra mora sadrzavati 4 znamenke!")
-                return zecja_rupa
+                return 'zecja_rupa'
 
             else:
                 brojac = 0
@@ -36,9 +37,8 @@ class ZecjaRupa():
                 * * * * * * * * * * * *
                 """))
                 while int(pogodak) != vrata  and brojac < 3:
-                    brojac += 1
-                    print("pokusaj ponovno")
-                    pogodak = int(input("pogodi: >>> "))
+                    brojac += 1                    
+                    pogodak = int(input("pogodi sifru: >>> "))
 
                 if pogodak != vrata:
 
@@ -46,7 +46,9 @@ class ZecjaRupa():
                     kraj te ga je pojeo ljuti:""")
                     ljuti = Zivotinja()
                     ljuti.enter()
+
                     return 'smrt'
+
                 else:
                     return 'kraj'
 

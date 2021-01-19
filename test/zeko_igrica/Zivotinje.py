@@ -1,3 +1,5 @@
+from random import randint
+
 class Zivotinja():
     bice = [
             "MEDVJED",
