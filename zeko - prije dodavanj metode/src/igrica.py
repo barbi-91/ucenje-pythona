@@ -27,11 +27,12 @@ class Smrt(Scene):
         exit(0)
 
 
-class Vrt(Scene):
+class Vrt(Scene):		
     def enter(self):
         print(dedent("""
             ***************************************************************
             ***************************************************************
+
             Iznad malog sela Radosne Livadice uzdize se lagani brezuljak Zecevo,
             obrastao niskom, pretezno crnogoricnom sumom u kojoj zivi
             mnogo zeceva. Zato je ovaj brezuljak i dobio ime po zecevima,
@@ -58,15 +59,16 @@ class Vrt(Scene):
                 a) sakriti ?
                 b) boriti ?
                 c) pobjeci ?
+
             """))
 
         radnja = input("> ")
-
         if radnja == "sakriti":
             print(dedent("""
                 Ako nemaš brod, plivaj!
                 Ako ne znaš plivati, izgradi brod!
                 Uspjeh je stvar stava!
+
                 Sugerirati jednom Zeki da se sakrije nije hrabro a niti mudro.
                 Zbog krive odluke, a vrlo dobrog njuha te velike lukavosti i
                 spretnosti, Zeko je pao u sape lisice.
@@ -81,7 +83,9 @@ class Vrt(Scene):
                 I treci, kakav si zaista. Tog jedino ne poznajes. Naposljetku, sustina saznavanja
                 nije u tome gubimo li igru, vec kako gubimo, sto s time spoznajemo, cemu nas je
                 poraz naucio i kako nas to mijenja. Gubiti na odredeni nacin znaci – dobivati.
+
                 Vrlina zeca nije u snazi vec u brzini, odlucnosti i inteligenciji.
+
                 Zeko je bio nepazljiv, a lisica je omastila brk.
                 """))
 
@@ -92,6 +96,7 @@ class Vrt(Scene):
             print(dedent("""
              ************************************Zeko odluci pobjeci***********************
              ******************************************************************************
+
                                                 *  *  *
                 Zeko je obisao cijelo selo i vidio pune vrtove zasadene prekrasnim kupusom.
                                                 *  *  *
@@ -100,6 +105,7 @@ class Vrt(Scene):
                 kraju sela, malo udaljen od kuća, Zeko je ispod plota iskopao jednu rupu,
                 tek toliku da se mogao provuci, kroz koju je usao u vrt. Rupu je mogao kopati
                 na miru, jer tuda nije nitko prolazio. Napokon njegovoj gladi dosao je kraj.
+
                 I tako je Zeko svako jutro dok su seljaci jos spavali, odlazio u njihov
                 vrt s kupusom i mrkvom. Medutim jednog dana na povratku kuci, prolazeci
                 summom ugledao je lovca.
@@ -110,7 +116,6 @@ class Vrt(Scene):
         else:
             print("Nepravilno unesena rijec!")
             return 'vrt'
-
 
 class Zagonetke(Scene):
     odgonetke = [
@@ -156,12 +161,14 @@ class LovSuma(Scene):
             Polako, ali pazljivo da ga ne vidi, sa punom vrecom kupusa
             uz brdo penjao se Zeko. Vreca je bila teska pa se Zeko morao
             odmarati nekoliko puta.
+
             Prilikom odmora nije ni znao da gubi vrijeme, lovac je slijedio njegov
             trag te uhvatio zeca. Kako je Zeko bio vrlo inteligentan, pokusao je
             pregovarati s lovcem ne bi li ga pustio. Ponudi je lovcu da mu uz rijesenu
             zagonetku uslisi molitve te ga pusti u sumu. Lovac nije znao da je Zeko
             najmudrije bice u sumi te misleci da zec nema nikakve sanse te pristane na
             okladu kako bi se jos malo zabavio na racun zeke.
+
             Lovac se zamisli... a potom rece:
             """))
 
@@ -182,11 +189,13 @@ class LovSuma(Scene):
                 I tako je mali intelignetni sivi Zeko jos jednom dokazao svoju mudrost.
                 Slatko se nasmijao i u tren oka umakao lovcu iz narucja, a potom i iz
                 vida, dok se lovac jos zaprepasteno cudio.
+
                 Zvonilo je podne kad je stigao na brezuljak Zecevo sa kupusom i mrkvom.
                 Pozvao je na rucak sve zeceve iz cijele sume. Svi su mu zecevi bili
                 zahvalni što ih je nahranio usred zime.
                 Na njihova lica vratila se radost, a iz ociju zablistao je vedar sjaj.
                 Od tada Zeko je među svojim rođacima uživao veliki ugled i povjerenje.
+
                 ***************************************************************
                 """))
 
@@ -223,6 +232,7 @@ class Potok(Scene):
             vatra ne ugansne dok se ne otopi sav led, a sto je opasno za malog
             zeca ili odluciti te usnuti i tako docekati proljece u svom toplom
             kreveticu.
+
             Hmmmm, sto je pametnije:
             a) odmrznuti ?
             b) usnuti ?
@@ -246,6 +256,7 @@ class Potok(Scene):
                 prijateljima pored potocica koji ih je tako smijelo mamio svojim
                 plavim ljeskanjem i suncem te cvijecm savrseno uklapljenim u idilu
                 male, razigrane doline.
+
                 Tako je Zeko utonuo u misli i radosno odskakuto u svoj krevetic.
                 ********************************************************************
                 """))
@@ -335,6 +346,7 @@ class Kraj(Scene):
                         zima će postati mnogo toplija, za sve!
         ************************************************************************
         ******************************* * *  <3 * <3 * <3  * * *****************
+
         """))
 
         return 'kraj'
@@ -380,4 +392,3 @@ class Mapa(object):
 zeko_mapa = Mapa('vrt')
 zeko_igra = Organizacija(zeko_mapa)
 zeko_igra.igra()
-

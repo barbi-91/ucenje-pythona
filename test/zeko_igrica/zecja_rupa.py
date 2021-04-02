@@ -17,8 +17,8 @@ class ZecjaRupa():
 
         vrata = 2003
         print("""
-        Broj koji otvara vrata je cetveroznamen broj i predstavlja
-                datum dolaska proljeca! (dan i mjesec)
+        Broj koji otvara vrata je cetveroznamen broj i predstavlja 
+                    dan prije proljeca,a zadnji dan zime! (dan i mjesec)
             """)
 
         pogodak = int(input ("pogodi sifru >>> "))
